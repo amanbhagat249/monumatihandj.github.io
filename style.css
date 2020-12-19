@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 40px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Langar', cursive;
+}
+.logo span {
+    color: rgb(0, 153, 255);
+}
+.disclamer{
+    padding-bottom: 5px;
+    background-color: #eee;
+    text-align: center;
+    font-family: 'Andika New Basic', sans-serif;
+    border: rgb(192, 191, 191) solid 0.1px;
+}
+.featured{
+    padding-bottom: 5px;
+    background-color: #eee;
+    text-align: center;
+    font-family: 'Andika New Basic', sans-serif;
+    margin-top: 5px;
+    border: rgb(192, 191, 191) solid 0.1px;
+}
+.titliaan {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    font-family: 'Andika New Basic', sans-serif;
+    padding: 10px;
+    font-size: small;
+    border: rgb(192, 191, 191) solid 0.1px;
+}
+.titliaan h1{
+    margin-left: 5px;
+    color: red;
+}
+.titliaan span{
+    color:grey;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+.titliaan:hover{
+    background-color: rgb(192, 191, 191);
+}
