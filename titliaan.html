@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="titliaan.css">
-    <title>Monu Matihan DJ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Monu Patel DJ</title>
 </head>
+
 <body>
-    <header class="logo"><span>Monu Matihan</span> DJ</header>
+    <header class="logo"><span>Monu Patel</span> DJ</header>
     <header class="disclamer">This is website is created by the one and only Aman</header>
     <header class="featured">
         <h4>Free Download Titliaan</h4>
     </header>
 
     <section class="download">
+        <audio id="Titliaan">
+            <source src="Titliaan.mp3">
+        </audio>
         <div class="img">
-            <img src="titliaan.jpg" >
+            <img src="titliaan.jpg"><br>
+            <i class="fas fa-play" onclick="togglePlay()" style="cursor: pointer;"></i>
             <h1>Download</h1>
             Titliaan.mp3 <br>
             <a href="Titliaan.mp3" download>
-            <button class="download-btn">320KBPS - 5.97 MB</button>
-        </a>
+                <button class="download-btn">320KBPS - 5.97 MB</button>
+            </a>
         </div>
-        
+
     </section>
-    
+    <script>
+        var myAudio = document.getElementById("Titliaan");
+        var isPlaying = false;
+
+        function togglePlay() {
+            isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function () {
+            isPlaying = true;
+        };
+        myAudio.onpause = function () {
+            isPlaying = false;
+        };
+    </script>
 </body>
+
 </html>

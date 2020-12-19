@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="titliaan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Monu Patel DJ</title>
+</head>
+
+<body>
+    <header class="logo"><span>Monu Patel</span> DJ</header>
+    <header class="disclamer">This is website is created by the one and only Aman</header>
+    <header class="featured">
+        <h4>Free Download Aap Se Pahle Na Aapke Baad</h4>
+    </header>
+
+    <section class="download">
+        <audio id="Aap se phle">
+            <source src="Aap Se Pehle.mp3">
+        </audio>
+        <div class="img">
+            <img src="app se pahle.jpg"><br>
+            <i class="fas fa-play" onclick="togglePlay()" style="cursor: pointer;"></i>
+            <h1>Download</h1>
+            Aap Se Pahle Na Aapke Baad.mp3 <br>
+            <a href="Aap Se Pehle.mp3" download>
+                <button class="download-btn">320KBPS - 8.39 MB</button>
+            </a>
+        </div>
+
+    </section>
+    <script>
+        var myAudio = document.getElementById("Aap se phle");
+        var isPlaying = false;
+
+        function togglePlay() {
+            isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function () {
+            isPlaying = true;
+        };
+        myAudio.onpause = function () {
+            isPlaying = false;
+        };
+    </script>
+</body>
+
+</html>
