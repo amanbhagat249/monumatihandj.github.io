@@ -16,7 +16,7 @@
     </header>
 
     <header class="featured">
-        <h4 style="text-align: left; padding-left: 10px; cursor: pointer;" onclick="dropdownToggle()">A To Z Bollywood
+        <h4 style="text-align: left; padding-left: 10px; cursor: pointer;" onclick="dropdownTogglebw()">A To Z Bollywood
             Songs</h4>
     </header>
     <div id="bollywood" style="display: none;">
@@ -33,15 +33,7 @@
             </section>
         </a>
 
-        <a href="Aankh.html">
-            <section class="titliaan">
-                <div.img>
-                    <img src="Aankh na mila.jpg" class="img1">
-                </div.img>
-                <h1> Aankh Na Mila Paebu Ho <br> <span> Size: 4.45 mb </span> </h1>
-
-            </section>
-        </a>
+        
 
         <header class="featured">
             <h4 style="text-align: left; padding-left: 10px;">D</h4>
@@ -103,18 +95,33 @@
         </a>
     </div>
     <header class="featured">
-        <h4 style="text-align: left; padding-left: 10px; cursor: pointer;" onclick="dropdownToggle()">A To Z  Bhojpuri Songs</h4>
+        <h4 style="text-align: left; padding-left: 10px; cursor: pointer;" onclick="dropdownTogglebj()">A To Z  Bhojpuri Songs</h4>
+        <div id="Bhojpuri" style="display: none;">
+            <a href="Aankh.html">
+                <section class="titliaan">
+                    <div.img>
+                        <img src="Aankh na mila.jpg" class="img1">
+                    </div.img>
+                    <h1> Aankh Na Mila Paebu Ho <br> <span> Size: 4.45 mb </span> </h1>
+    
+                </section>
+            </a>
+        </div>
     </header>
     <header class="featured">
-        <h4 style="text-align: left; padding-left: 10px; cursor: pointer;" onclick="dropdownToggle()">A To Z Punjabi Songs</h4>
+        <h4 style="text-align: left; padding-left: 10px; cursor: pointer;" onclick="dropdownTogglepj()">A To Z Punjabi Songs</h4>
     </header>
     <script>
         var a = document.getElementById("bollywood");
+        var b = document.getElementById("Bhojpuri")
 
 
 
-        function dropdownToggle() {
+        function dropdownTogglebw() {
             a.style = "display: block";
+        }
+        function dropdownTogglebj(){
+            b.style = "display: block";
         }
 
 
