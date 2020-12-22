@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="titliaan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>MonuPatel Matihan DJ</title>
+</head>
+
+<body>
+    <header class="logo"><span>MonuPatel</span> Matihan DJ</header>
+    <header class="disclamer">This website is created by the one and only Aman</header>
+    <header class="featured">
+        <h4>Free Download Kagaj kalam dwat la likh du dil tere</h4>
+    </header>
+
+    <section class="download">
+        <audio id="Teri Mohabbat Ne Dil Me Makaam Kr Diya">
+            <source src="Kagaj kalam dwat la likh du dil tere.mp3">
+        </audio>
+        <div class="img">
+            <img src="Kagaj kalam dwat la likh du dil tere.jpg"><br>
+            <i class="fas fa-play" onclick="togglePlay()" style="cursor: pointer;"></i>
+            <h1>Download</h1>
+            Kagaj kalam dwat la likh du dil tere.mp3 <br>
+            <a href="Kagaj kalam dwat la likh du dil tere.mp3" download>
+                <button class="download-btn">320KBPS - 7.76 MB</button>
+            </a>
+        </div>
+
+    </section>
+    <script>
+        var myAudio = document.getElementById("Teri Mohabbat Ne Dil Me Makaam Kr Diya");
+        var isPlaying = false;
+
+        function togglePlay() {
+            isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function () {
+            isPlaying = true;
+        };
+        myAudio.onpause = function () {
+            isPlaying = false;
+        };
+    </script>
+</body>
+
+</html>
